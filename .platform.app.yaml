@@ -1,0 +1,14 @@
+name: app
+type: php:7.0
+build:
+  flavor: composer
+disk: 2048
+
+web:
+  locations:
+    "/":
+      root: "public"
+      passthru: "/index.php"
+      index:
+        - index.html
+      allow: true
