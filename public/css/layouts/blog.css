@@ -34,7 +34,7 @@ h3 {
 }
 
 .sidebar {
-    background: rgb(61, 79, 93);
+    background: rgb(10, 10, 53);
     color: #fff;
 }
 
@@ -160,6 +160,7 @@ h3 {
     .content {
         padding: 2em 3em 0;
         margin-left: 25%;
+        max-width: 60em;
     }
 
     .header {
