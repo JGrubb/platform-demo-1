@@ -11,10 +11,5 @@ $config = new \Platformsh\ConfigReader\Config();
 if ($config->isAvailable()) {
     var_dump($config->project);
     var_dump($config->application_name);
-    var_dump($config->relationships['database'][0]['host']);
-    if (isset($config->relationships['database'][0])) {
-        $database = $config->relationships['database'][0];
-
-        // Now $database is an array representing a database service.
-    }
+    print_r($config->routes);
 }
