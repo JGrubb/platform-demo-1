@@ -12,4 +12,5 @@ if ($config->isAvailable()) {
     var_dump($config->project);
     var_dump($config->application_name);
     print_r($config->routes);
+    var_dump($_SERVER['SERVER_NAME']);
 }
