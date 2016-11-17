@@ -16,6 +16,9 @@ web:
 relationships:
   database: "mysqldb:mysql"
   
+mounts:
+  "test-mount": "shared:files/test-mount"
+  
 hooks:
   build: |
     echo "This is the build hook firing!"
