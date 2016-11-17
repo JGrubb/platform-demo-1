@@ -17,5 +17,7 @@ relationships:
   database: "mysqldb:mysql"
   
 hooks:
+  build: |
+    echo "This is the build hook firing!"
   deploy: |
     echo "This is the deploy hook firing!"
