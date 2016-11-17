@@ -15,3 +15,7 @@ web:
 
 relationships:
   database: "mysqldb:mysql"
+  
+hooks:
+  deploy: |
+    echo "This is the deploy hook firing!"
