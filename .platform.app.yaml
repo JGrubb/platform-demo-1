@@ -12,3 +12,6 @@ web:
       index:
         - index.html
       allow: true
+
+relationships:
+  database: "mysqldb:mysql"
