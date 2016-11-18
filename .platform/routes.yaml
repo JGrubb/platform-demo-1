@@ -1,10 +1,17 @@
-"http://www.{default}/":
-  type: upstream
-  upstream: "app:http"
+http://www.{default}/:
   cache:
-    enabled: true
-    headers: ["user-agent"]
     cookies: []
-"http://{default}/":
+    default_ttl: 600
+    enabled: true
+    headers:
+    - User-Agent
+  redirects:
+    expires: -1s
+    paths: {}
+  ssi:
+    enabled: false
+  type: upstream
+  upstream: app:http
+http://{default}/:
+  to: http://www.{default}/
   type: redirect
-  to: "http://www.{default}/"
