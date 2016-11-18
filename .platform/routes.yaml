@@ -5,6 +5,7 @@ http://www.{default}/:
     enabled: true
     headers:
     - User-Agent
+    - user-agent
   redirects:
     expires: -1s
     paths: {}
