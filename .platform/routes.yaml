@@ -1,6 +1,7 @@
 http://www.{default}/:
   cache:
-    cookies: []
+    cookies:
+    - foo
     default_ttl: 600
     enabled: true
     headers:
