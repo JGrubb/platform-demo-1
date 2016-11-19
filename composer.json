@@ -1,5 +1,8 @@
 {
     "require": {
-        "platformsh/config-reader": "^0.0.1"
+        "platformsh/config-reader": "^0.0.1",
+        "doctrine/orm": "^2.5",
+        "symfony/yaml": "^3.1",
+        "symfony/event-dispatcher": "^3.1"
     }
 }

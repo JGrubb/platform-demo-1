@@ -10,7 +10,7 @@ web:
       root: "public"
       passthru: "/index.php"
       index:
-        - index.html
+        - index.php
       allow: true
 
 relationships:

@@ -7,8 +7,6 @@
 
     <title>Platform.sh Example Demo</title>
 
-    
-
 
 <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 
