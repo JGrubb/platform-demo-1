@@ -13,9 +13,9 @@ web:
         - index.php
       allow: true
 
-relationships:
-  database: "mysqldb:mysql"
-  
+# relationships:
+#   database: "mysqldb:mysql"
+#
 # mounts:
 #   "test-mount": "shared:files/test-mount"
   
