@@ -1,6 +1,6 @@
 http://www.{default}/:
   type: upstream
-  upstream: foo:http
+  upstream: app:http
 http://{default}/:
   to: http://www.{default}/
   type: redirect
