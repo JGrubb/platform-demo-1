@@ -4,3 +4,5 @@ mysqldb:
 solrsearch:
   type: solr:4.10
   disk: 512
+rediscache:
+  type: redis:3.0
