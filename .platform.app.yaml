@@ -13,14 +13,15 @@ web:
         - index.php
       allow: true
 
-# relationships:
-#   database: "mysqldb:mysql"
+relationships:
+  database: "mysqldb:mysql"
+  arbitrary: "solrsearch:solr"
 #
-# mounts:
-#   "test-mount": "shared:files/test-mount"
+mounts:
+  "test-mount": "shared:files/test-mount"
   
-# hooks:
-#   build: |
-#     echo "This is the build hook firing!"
-#   deploy: |
-#     echo "This is the deploy hook firing!"
+hooks:
+  build: |
+    echo "This is the build hook firing!"
+  deploy: |
+    echo "This is the deploy hook firing!"
