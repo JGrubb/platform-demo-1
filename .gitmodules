@@ -1,0 +1,3 @@
+[submodule "test-submodule"]
+	path = test-submodule
+	url = git@github.com:JGrubb/test-submodule.git
