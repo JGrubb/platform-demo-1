@@ -13,7 +13,7 @@ web:
         - index.php
       allow: true
     "/submodule":
-      root: "test-submodule"
+      root: "test-submodule/public"
       passthru: "/index.php"
       index:
         - index.php
