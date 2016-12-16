@@ -12,6 +12,12 @@ web:
       index:
         - index.php
       allow: true
+    "/submodule":
+      root: "test-submodule"
+      passthru: "/index.php"
+      index:
+        - index.php
+      allow: true
 
 relationships:
   database: "mysqldb:mysql"
