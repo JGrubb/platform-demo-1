@@ -6,4 +6,4 @@ http://{default}/:
   type: redirect
 http://test.{default}/:
   type: upstream
-  upstream: submodule
+  upstream: submodule:http
