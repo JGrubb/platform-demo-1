@@ -4,4 +4,3 @@ http://www.{default}/:
 http://{default}/:
   to: http://www.{default}/
   type: redirect
-
