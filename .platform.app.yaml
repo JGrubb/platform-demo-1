@@ -3,6 +3,9 @@ type: php:7.0
 build:
   flavor: composer
 disk: 2048
+runtime:
+  sizing_hints:
+    request_memory: 1
 
 web:
   locations:
