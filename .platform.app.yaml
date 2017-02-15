@@ -29,6 +29,11 @@ web:
 # mounts:
 #   "test-mount": "shared:files/test-mount"
 #
+cron:
+  job1:
+    spec: "* * * * *"
+    cmd: "echo $PATH"
+
 hooks:
   build: |
     echo "This is the build hook firing!"
