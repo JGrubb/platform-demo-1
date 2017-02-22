@@ -130,10 +130,10 @@
                     <div class="post-description">
                         <div class="post-images pure-g">
                             <div class="pure-u-1 pure-u-md-1-2">
-                                <a href="http://www.flickr.com/photos/uberlife/8915936174/">
+                                <a href="//www.flickr.com/photos/uberlife/8915936174/">
                                     <img alt="Photo of someone working poolside at a resort"
                                          class="pure-img-responsive"
-                                         src="http://farm8.staticflickr.com/7448/8915936174_8d54ec76c6.jpg">
+                                         src="//farm8.staticflickr.com/7448/8915936174_8d54ec76c6.jpg">
                                 </a>
 
                                 <div class="post-image-meta">
@@ -142,10 +142,10 @@
                             </div>
 
                             <div class="pure-u-1 pure-u-md-1-2">
-                                <a href="http://www.flickr.com/photos/uberlife/8907351301/">
+                                <a href="//www.flickr.com/photos/uberlife/8907351301/">
                                     <img alt="Photo of the sunset on the beach"
                                          class="pure-img-responsive"
-                                         src="http://farm8.staticflickr.com/7382/8907351301_bd7460cffb.jpg">
+                                         src="//farm8.staticflickr.com/7382/8907351301_bd7460cffb.jpg">
                                 </a>
 
                                 <div class="post-image-meta">
@@ -179,8 +179,8 @@
                 <div class="pure-menu pure-menu-horizontal">
                     <ul>
                         <li class="pure-menu-item"><a href="http://purecss.io/" class="pure-menu-link">About</a></li>
-                        <li class="pure-menu-item"><a href="http://twitter.com/yuilibrary/" class="pure-menu-link">Twitter</a></li>
-                        <li class="pure-menu-item"><a href="http://github.com/yahoo/pure/" class="pure-menu-link">GitHub</a></li>
+                        <li class="pure-menu-item"><a href="https://twitter.com/yuilibrary/" class="pure-menu-link">Twitter</a></li>
+                        <li class="pure-menu-item"><a href="https://github.com/yahoo/pure/" class="pure-menu-link">GitHub</a></li>
                     </ul>
                 </div>
             </div>
