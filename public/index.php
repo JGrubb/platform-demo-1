@@ -8,7 +8,7 @@
     <title>Platform.sh Example Demo</title>
 
 
-<link rel="stylesheet" href="//yui.yahooapis.com/pure/0.6.0/pure-min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/pure-min.css">
 
 
 
@@ -19,7 +19,7 @@
 <![endif]-->
 <!--[if gt IE 8]><!-->
   
-    <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
   
 <!--<![endif]-->
 
