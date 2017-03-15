@@ -1,8 +1,8 @@
 # mysqldb:
 #   type: mysql:10.0
 #   disk: 512
-solrsearch:
-  type: solr:4.10
-  disk: 512
+# solrsearch:
+#   type: solr:4.10
+#   disk: 512
 # rediscache:
 #   type: redis:3.0
