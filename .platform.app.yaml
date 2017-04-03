@@ -1,11 +1,11 @@
 name: app
-type: php:5.6
+type: php:7.0
 build:
   flavor: composer
 disk: 2048
 runtime:
   extensions:
-    - mongo
+    - mongodb
   sizing_hints:
     request_memory: 1
 
