@@ -1,13 +1,8 @@
 name: app
-type: php:7.0
+type: php:5.6
 build:
   flavor: composer
 disk: 2048
-runtime:
-  extensions:
-    - mongodb
-  sizing_hints:
-    request_memory: 1
 
 web:
   locations:
