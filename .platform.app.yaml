@@ -3,6 +3,11 @@ type: php:5.6
 build:
   flavor: composer
 disk: 2048
+dependencies:
+  nodejs:
+    yarn: "*"
+  ruby:
+    sass: "*"
 
 web:
   locations:
