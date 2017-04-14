@@ -6,8 +6,11 @@ disk: 2048
 dependencies:
   nodejs:
     yarn: "*"
+    gulp-cli: "*"
   ruby:
     sass: "*"
+  php:
+    drush/drush: "*"
 
 web:
   locations:
