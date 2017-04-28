@@ -22,34 +22,14 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
   
 <!--<![endif]-->
-
-
-
-
-
-  
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="/assets/css/blog.css">
+        <link rel="stylesheet" href="/assets/css/main.css">
     <!--<![endif]-->
-  
-
-
-    
-
-    
-
 </head>
 <body>
-
-
-
-
-
-
-
 <div id="layout" class="pure-g">
     <div class="sidebar pure-u-1 pure-u-md-1-4">
         <div class="header">

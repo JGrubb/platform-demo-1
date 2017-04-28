@@ -41,6 +41,6 @@ cron:
 
 hooks:
   build: |
-    echo "This is the build hook firing!"
+    sass -t compressed public/assets/sass/blog.sass:public/assets/css/main.css
   deploy: |
     echo "This is the deploy hook firing!"
