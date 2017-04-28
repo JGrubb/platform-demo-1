@@ -32,7 +32,7 @@
         <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="css/layouts/blog.css">
+        <link rel="stylesheet" href="/assets/css/blog.css">
     <!--<![endif]-->
   
 
