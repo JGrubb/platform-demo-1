@@ -26,7 +26,7 @@
         <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="stylesheet" href="/css/blog.css">
     <!--<![endif]-->
 </head>
 <body>

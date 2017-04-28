@@ -1,5 +1,5 @@
 vendor
 .idea
-public/assets/css
+public/css
 .sass-cache
 node_modules
