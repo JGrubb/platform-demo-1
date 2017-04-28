@@ -4,13 +4,11 @@ build:
   flavor: composer
 disk: 2048
 dependencies:
-  # nodejs:
-  #   yarn: "*"
-  #   gulp-cli: "*"
+  nodejs:
+    yarn: "*"
+    gulp-cli: "*"
   ruby:
     sass: "*"
-  # php:
-  #   drush/drush: "*"
 
 web:
   locations:
