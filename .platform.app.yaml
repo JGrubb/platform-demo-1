@@ -3,14 +3,12 @@ type: php:5.6
 build:
   flavor: composer
 disk: 2048
-# dependencies:
-#   nodejs:
-#     yarn: "*"
-#     gulp-cli: "*"
-#   ruby:
-#     sass: "*"
-#   php:
-#     drush/drush: "*"
+dependencies:
+  nodejs:
+    yarn: "*"
+    gulp-cli: "*"
+  ruby:
+    sass: "*"
 
 web:
   locations:
@@ -41,6 +39,7 @@ cron:
 
 hooks:
   build: |
-    echo "This is the build hook firing!"
+    yarn
+    gulp
   deploy: |
     echo "This is the deploy hook firing!"

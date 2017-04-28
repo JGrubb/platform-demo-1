@@ -1,2 +1,5 @@
 vendor
 .idea
+public/css
+.sass-cache
+node_modules
