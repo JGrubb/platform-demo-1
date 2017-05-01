@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+    "hash": "2338563b6250c2ca298b0094442218e3",
     "content-hash": "57c70a3d486c259c415bcd4372916681",
     "packages": [
         {
@@ -46,7 +47,7 @@
                 }
             ],
             "description": "Small helper to access Platform.sh environment variables",
-            "time": "2015-11-20T11:33:07+00:00"
+            "time": "2015-11-20 11:33:07"
         }
     ],
     "packages-dev": [],

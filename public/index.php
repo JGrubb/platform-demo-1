@@ -1,3 +1,7 @@
+<?php
+    include_once __DIR__ . '/../vendor/autoload.php';
+    $config = new \Platformsh\ConfigReader\Config();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -34,7 +38,12 @@
     <div class="sidebar pure-u-1 pure-u-md-1-4">
         <div class="header">
             <h1 class="brand-title">A Sample Blog</h1>
-            <h2 class="brand-tagline">Creating a blog layout using Pure</h2>
+            <?php if ($config->isAvailable()) { ?>
+                <h2 class="brand-tagline">Congrats, this project is hosted on Platform.sh!</h2>
+            <?php } else { ?>
+                <h2 class="brand-tagline">This project is *not* being served from Platform.sh</h2>
+            <?php } ?>
+            
 
             <nav class="nav">
                 <ul class="nav-list">
