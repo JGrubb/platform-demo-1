@@ -18,6 +18,7 @@ web:
       index:
         - index.php
       allow: true
+#
     # "/submodule":
     #   root: "test-submodule/public"
     #   passthru: "/index.php"
