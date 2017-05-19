@@ -28,7 +28,7 @@ web:
 
 # relationships:
 #   database: "mysqldb:mysql"
-#   arbitrary: "solrsearch:solr"
+#   solr: "solrsearch:solr"
 # #
 # mounts:
 #   "test-mount": "shared:files/test-mount"
