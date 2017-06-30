@@ -5,7 +5,6 @@ build:
 disk: 2048
 dependencies:
   nodejs:
-    yarn: "*"
     gulp-cli: "*"
   ruby:
     sass: "*"
@@ -40,7 +39,7 @@ cron:
 
 hooks:
   build: |
-    yarn
+    npm install
     gulp
   deploy: |
     echo "This is the deploy hook firing!"
