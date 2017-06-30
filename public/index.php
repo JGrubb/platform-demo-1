@@ -17,14 +17,14 @@
 
 
 <!--[if lte IE 8]>
-  
+
     <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
-  
+
 <![endif]-->
 <!--[if gt IE 8]><!-->
-  
+
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.6.2/grids-responsive-min.css">
-  
+
 <!--<![endif]-->
     <!--[if lte IE 8]>
         <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
@@ -43,7 +43,7 @@
             <?php } else { ?>
                 <h2 class="brand-tagline">This project is *not* being served from Platform.sh</h2>
             <?php } ?>
-            
+
 
             <nav class="nav">
                 <ul class="nav-list">
@@ -69,7 +69,7 @@
                     <header class="post-header">
                         <img class="post-avatar" alt="Tilo Mitra&#x27;s avatar" height="48" width="48" src="img/common/tilo-avatar.png">
 
-                        <h2 class="post-title">Introducing Pure</h2>
+                        <h2 class="post-title">Introducing Platform.sh</h2>
 
                         <p class="post-meta">
                             By <a href="#" class="post-author">Tilo Mitra</a> under <a class="post-category post-category-design" href="#">CSS</a> <a class="post-category post-category-pure" href="#">Pure</a>
