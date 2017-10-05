@@ -39,7 +39,6 @@ cron:
 
 hooks:
   build: |
-
     npm install
     gulp
   deploy: |
