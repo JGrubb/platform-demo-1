@@ -17,6 +17,8 @@ web:
       index:
         - index.php
       allow: true
+      headers:
+        x-testing: "hello"
 
     # "/submodule":
     #   root: "test-submodule/public"
