@@ -1,6 +1,12 @@
 https://www.{default}/:
   type: upstream
   upstream: app:http
+  tls:
+    min_version: TLSv1.2
+  strict_transport_security:
+    enabled: true
+    include_subdomains: true
+    preload: true
 https://{default}/:
   to: http://www.{default}/
   type: redirect
