@@ -3,11 +3,6 @@ type: php:7.1
 build:
   flavor: composer
 disk: 2048
-dependencies:
-  nodejs:
-    gulp-cli: "*"
-  ruby:
-    sass: "*"
 
 web:
   locations:
@@ -27,18 +22,23 @@ web:
     #     - index.php
     #   allow: true
 
-# relationships:
-#   database: "mysqldb:mysql"
-#   solr: "solrsearch:solr"
+relationships:
+  database: "mysqldb:mysql"
+  solr: "solrsearch:solr"
 #
-# mounts:
-#   "test-mount": "shared:files/test-mount"
+mounts:
+  "test-mount": "shared:files/test-mount"
 #
 cron:
   job1:
     spec: "* * * * *"
     cmd: "echo $PATH"
 
+dependencies:
+  nodejs:
+    gulp-cli: "*"
+  ruby:
+    sass: "*"
 hooks:
   build: |
     npm install
