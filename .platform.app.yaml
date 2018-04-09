@@ -14,9 +14,10 @@ web:
       allow: true
       headers:
         x-testing: "hello"
-    "/info":
-      root: "public"
-      passthru: "/info.php"
+
+    # "/info":
+    #   root: "public"
+    #   passthru: "/info.php"
 
     # "/submodule":
     #   root: "test-submodule/public"
