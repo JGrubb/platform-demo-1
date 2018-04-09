@@ -1,5 +1,5 @@
 name: app
-type: php:7.1
+type: php:7.2
 build:
   flavor: composer
 disk: 2048
@@ -45,4 +45,3 @@ hooks:
     gulp
   deploy: |
     echo "This is the deploy hook firing!"
-
