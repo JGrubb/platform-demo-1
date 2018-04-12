@@ -1,8 +1,7 @@
 name: app
-type: php:5.6
+type: php:7.2
 build:
   flavor: composer
-disk: 2048
 
 web:
   locations:
@@ -29,9 +28,11 @@ web:
 relationships:
   database: "mysqldb:mysql"
   solr: "solrsearch:solr"
+
 #
 mounts:
   "test-mount": "shared:files/test-mount"
+disk: 2048
 #
 cron:
   job1:
