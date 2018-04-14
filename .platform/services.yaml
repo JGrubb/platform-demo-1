@@ -5,7 +5,7 @@ mysqldb:
         schemas:
             - main
         endpoints:
-            admin:
+            mysql:
                 default_schema: main
                 privileges:
                     main: admin
