@@ -4,13 +4,11 @@ mysqldb:
     configuration:
         schemas:
             - main
-            - other
         endpoints:
             admin:
                 default_schema: main
                 privileges:
                     main: admin
-                    other: admin
 solrsearch:
     type: solr:4.10
     disk: 512
