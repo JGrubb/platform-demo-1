@@ -1,8 +1,16 @@
 mysqldb:
-  type: mysql:10.0
-  disk: 512
+    type: mysql:10.0
+    disk: 1024
+    configuration:
+        schemas:
+            - main
+        endpoints:
+            mysql:
+                default_schema: main
+                privileges:
+                    main: admin
 solrsearch:
-  type: solr:4.10
-  disk: 512
+    type: solr:4.10
+    disk: 512
 rediscache:
-  type: redis:3.0
+    type: redis:3.0

@@ -1,8 +1,7 @@
 name: app
-type: php:7.1
+type: php:7.2
 build:
   flavor: composer
-disk: 2048
 
 web:
   locations:
@@ -15,6 +14,10 @@ web:
       headers:
         x-testing: "hello"
 
+    # "/info":
+    #   root: "public"
+    #   passthru: "/info.php"
+
     # "/submodule":
     #   root: "test-submodule/public"
     #   passthru: "/index.php"
@@ -25,9 +28,11 @@ web:
 relationships:
   database: "mysqldb:mysql"
   solr: "solrsearch:solr"
+
 #
 mounts:
   "test-mount": "shared:files/test-mount"
+disk: 2048
 #
 cron:
   job1:
@@ -45,4 +50,3 @@ hooks:
     gulp
   deploy: |
     echo "This is the deploy hook firing!"
-
