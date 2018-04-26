@@ -1,1 +1,2 @@
 export PATH=/app/vendor/bin:$PATH
+. git_svn_bash_prompt.sh
