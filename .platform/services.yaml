@@ -14,3 +14,11 @@ solrsearch:
     disk: 512
 rediscache:
     type: redis:3.0
+varnishcache:
+    type: varnish:5.1-rc
+    relationships:
+        app: 'app:http'
+    configuration:
+        vcl: !include
+            type: string
+            path: config.vcl

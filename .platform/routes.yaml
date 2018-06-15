@@ -1,6 +1,6 @@
 https://www.{default}/:
   type: upstream
-  upstream: app:http
+  upstream: varnishcache:http
   # tls:
   #   min_version: TLSv1.2
   #   strict_transport_security:
