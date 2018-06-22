@@ -1,5 +1,5 @@
 name: app
-type: php:7.2
+type: php:7.0
 build:
   flavor: composer
 
@@ -50,3 +50,5 @@ hooks:
     gulp
   deploy: |
     echo "This is the deploy hook firing!"
+  post_deploy:
+    echo "Post deploy"
