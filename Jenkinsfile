@@ -6,7 +6,7 @@ pipeline {
             steps{
                 sh 'env'
                 script {
-                	def projects = readFile("${WORKSPACE}/projects.txt")
+                	def projects = readFile("${WORKSPACE}/projects.txt").split('\n')
                 	for (int i = 0; i < projects.size(); ++i) {
                 		sh "platform push -p ${projects[i]} --target ${env.BRANCH_NAME} -W -y --activate"
                 	}
