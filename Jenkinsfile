@@ -5,9 +5,11 @@ pipeline {
         stage('Deploy'){
             steps{
                 sh 'env'
-                def projects = readFile("${WORKSPACE}/projects.txt")
-                projects.eachLine { line ->
-                	sh "platform push -p ${line} --target ${env.BRANCH_NAME} -W -y --activate"
+                script {
+                	def projects = readFile("${WORKSPACE}/projects.txt")
+                	for (int i = 0; i < projects.size(); ++i) {
+                		sh "platform push -p ${projects[i]} --target ${env.BRANCH_NAME} -W -y --activate"
+                	}
                 }
             }
         }
