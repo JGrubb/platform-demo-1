@@ -46,6 +46,8 @@ dependencies:
     sass: "*"
 hooks:
   build: |
+    source vars.txt
+    echo $TEST
     npm install
     gulp
   deploy: |
