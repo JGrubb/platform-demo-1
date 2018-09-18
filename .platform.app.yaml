@@ -44,7 +44,7 @@ dependencies:
     gulp-cli: "*"
 hooks:
   build: |
-    if [ ! -d /mnt/cache/ruby-2.5 ]
+    if [ ! -d /mnt/cache/ruby-2.5 ]; then
       echo "compiling Ruby"
       wget https://cache.ruby-lang.org/pub/ruby/2.5/ruby-2.5.1.tar.gz
       tar xzvf ruby-2.5.1.tar.gz && cd ruby-2.5.1
