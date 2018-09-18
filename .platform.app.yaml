@@ -44,11 +44,12 @@ dependencies:
     gulp-cli: "*"
 hooks:
   build: |
+    sleep 300
     wget https://cache.ruby-lang.org/pub/ruby/2.5/ruby-2.5.1.tar.gz
     tar xzvf ruby-2.5.1.tar.gz && cd ruby-2.5.1
     ./configure --prefix=/app/.global
-    gem install sassc
     make && make install
+    gem install sassc
     npm install
     gulp
     ls -l /mnt/cache
