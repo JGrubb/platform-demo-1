@@ -1,5 +1,5 @@
 name: app
-type: php:7.0
+type: php:7.2
 build:
   flavor: composer
 
@@ -48,7 +48,10 @@ hooks:
   build: |
     npm install
     gulp
+    echo "sleeping"
+    sleep 300
   deploy: |
     echo "This is the deploy hook firing!"
+    if 
   post_deploy:
     echo "Post deploy"
