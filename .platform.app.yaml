@@ -46,7 +46,7 @@ hooks:
   build: |
     wget https://cache.ruby-lang.org/pub/ruby/2.5/ruby-2.5.1.tar.gz
     tar xzvf ruby-2.5.1.tar.gz && cd ruby-2.5.1
-    ./configure --prefix=/mnt/cache
+    ./configure --prefix=/mnt/cache/ruby-2.5
     make && make install
     gem install sassc
     npm install
