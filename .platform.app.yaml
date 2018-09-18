@@ -48,8 +48,7 @@ hooks:
   build: |
     npm install
     gulp
-    echo "sleeping"
-    sleep 300
+    ls -l /mnt/cache
   deploy: |
     echo "This is the deploy hook firing!"
     if 
