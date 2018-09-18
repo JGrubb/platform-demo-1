@@ -42,10 +42,13 @@ cron:
 dependencies:
   nodejs:
     gulp-cli: "*"
-  ruby:
-    sassc: "*"
 hooks:
   build: |
+    wget https://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.5.1.tar.gz
+    tar xzvf ruby-2.5.1.tar.gz && cd ruby-2.5.1
+    ./configure --prefix=/app/.global
+    gem install sassc
+    make && make install
     npm install
     gulp
     ls -l /mnt/cache
