@@ -43,7 +43,7 @@ dependencies:
   nodejs:
     gulp-cli: "*"
   ruby:
-    sass: "*"
+    sassc: "*"
 hooks:
   build: |
     npm install
