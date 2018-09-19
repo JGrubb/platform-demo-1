@@ -53,6 +53,7 @@ hooks:
       make && make install
     fi
     cp -r /mnt/cache/ruby-2.5/bin/* /app/.global/bin/
+    which ruby
     gem install sassc
     npm install
     gulp
