@@ -46,6 +46,7 @@ hooks:
   build: |
     wget http://www.saxonica.com/saxon-c/libsaxon-HEC-setup64-v1.1.0.zip
     unzip libsaxon-HEC-setup64-v1.1.0.zip
+    echo "executing that thing"
     ./libsaxon-HEC-setup64-v1.1.0
     npm install
     gulp
