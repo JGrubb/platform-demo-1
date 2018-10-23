@@ -44,20 +44,8 @@ dependencies:
     gulp-cli: "*"
 hooks:
   build: |
-          #    echo $PATH
-          #    if [ ! -d /mnt/cache/ruby-2.5 ]; then
-          #      echo "compiling Ruby"
-          #      wget https://cache.ruby-lang.org/pub/ruby/2.5/ruby-2.5.1.tar.gz
-          #      tar xzvf ruby-2.5.1.tar.gz && cd ruby-2.5.1
-          #      ./configure --prefix=/mnt/cache/ruby-2.5
-          #      make && make install
-          #    fi
-          #    cp -r /mnt/cache/ruby-2.5/bin/* /app/.global/bin/
-          #    which ruby
-          #    gem install sassc
     npm install
     gulp
-    ls -l /mnt/cache
   deploy: |
     echo "This is the deploy hook firing!" 
   post_deploy: |
