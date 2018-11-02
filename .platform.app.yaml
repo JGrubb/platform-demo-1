@@ -44,10 +44,10 @@ dependencies:
     gulp-cli: "*"
 hooks:
   build: |
-    wget http://www.saxonica.com/saxon-c/libsaxon-HEC-setup64-v1.1.0.zip
-    unzip libsaxon-HEC-setup64-v1.1.0.zip
-    echo "executing that thing"
-    ./libsaxon-HEC-setup64-v1.1.0
+    wget http://www.rsyslog.com/files/download/rsyslog/rsyslog-8.39.0.tar.gz
+    tar xzvf rsyslog-8.39.0.tar.gz && cd rsyslog-8.39.0
+    ./configure --prefix=/app/.global
+    make && make install
     npm install
     gulp
   deploy: |
