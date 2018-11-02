@@ -44,6 +44,11 @@ dependencies:
     gulp-cli: "*"
 hooks:
   build: |
+    wget http://libestr.adiscon.com/files/download/libestr-0.1.11.tar.gz
+    tar xzvf libestr-0.1.11.tar.gz && cd libestr-0.1.11.tar.gz
+    ./configure --prefix=/app/.global
+    make && make install
+    cd ~
     wget http://www.rsyslog.com/files/download/rsyslog/rsyslog-8.39.0.tar.gz
     tar xzvf rsyslog-8.39.0.tar.gz && cd rsyslog-8.39.0
     ./configure --prefix=/app/.global
