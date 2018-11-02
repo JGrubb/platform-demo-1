@@ -52,7 +52,7 @@ hooks:
     cd ~
     wget http://www.rsyslog.com/files/download/rsyslog/rsyslog-8.39.0.tar.gz
     tar xzvf rsyslog-8.39.0.tar.gz && cd rsyslog-8.39.0
-    ./configure --prefix=/app/.global
+    ./configure --prefix=/app/.global LDFLAGS="-L/app/.global/lib"
     make && make install
     npm install
     gulp
