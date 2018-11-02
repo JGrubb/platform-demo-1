@@ -48,7 +48,7 @@ hooks:
     tar xzvf libestr-0.1.11.tar.gz && cd libestr-0.1.11.tar.gz
     ./configure --prefix=/app/.global
     make && make install
-    sleep 10
+    sleep 20
     cd ~
     wget http://www.rsyslog.com/files/download/rsyslog/rsyslog-8.39.0.tar.gz
     tar xzvf rsyslog-8.39.0.tar.gz && cd rsyslog-8.39.0
