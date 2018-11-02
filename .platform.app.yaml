@@ -44,6 +44,9 @@ dependencies:
     gulp-cli: "*"
 hooks:
   build: |
+    export LIBRARY_PATH="/app/.global/lib"
+    export LD_LIBRARY_PATH="/app/.global/lib"
+    export PKG_CONFIG="/app/.global/lib/pkgconfig"
     wget http://libestr.adiscon.com/files/download/libestr-0.1.11.tar.gz
     tar xzvf libestr-0.1.11.tar.gz && cd libestr-0.1.11
     ./configure --prefix=/app/.global
