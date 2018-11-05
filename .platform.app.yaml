@@ -44,7 +44,7 @@ dependencies:
     gulp-cli: "*"
 hooks:
   build: |
-    echo "I love you"
+    echo "I love you, really"
     npm install
     gulp
   deploy: |
