@@ -44,6 +44,7 @@ dependencies:
     gulp-cli: "*"
 hooks:
   build: |
+    echo "testing!"
     npm install
     gulp
   deploy: |
