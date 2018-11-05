@@ -44,18 +44,6 @@ dependencies:
     gulp-cli: "*"
 hooks:
   build: |
-    export LIBRARY_PATH="/app/.global/lib"
-    export LD_LIBRARY_PATH="/app/.global/lib"
-    export PKG_CONFIG="/app/.global/lib/pkgconfig"
-    wget http://libestr.adiscon.com/files/download/libestr-0.1.11.tar.gz
-    tar xzvf libestr-0.1.11.tar.gz && cd libestr-0.1.11
-    ./configure --prefix=/app/.global
-    make && make install
-    cd ~
-    wget http://www.rsyslog.com/files/download/rsyslog/rsyslog-8.39.0.tar.gz
-    tar xzvf rsyslog-8.39.0.tar.gz && cd rsyslog-8.39.0
-    ./configure LDFLAGS="-L/app/.global/lib" PKG_CONFIG="/app/.global/lib/pkgconfig" --prefix=/app/.global
-    make && make install
     npm install
     gulp
   deploy: |
