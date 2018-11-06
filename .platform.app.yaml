@@ -51,5 +51,3 @@ hooks:
     echo "This is the deploy hook firing!" 
   post_deploy: |
     echo "Post deploy"
-
-
