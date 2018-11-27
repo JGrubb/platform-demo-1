@@ -47,7 +47,7 @@ hooks:
     npm install
     gulp
   deploy: |
-    echo "This is the deploy hook firing!" 
+    echo "This is the deploy hook firing! AndI like it too!" 
   post_deploy: |
     echo "Post deploy"
 
