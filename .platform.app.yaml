@@ -44,11 +44,10 @@ dependencies:
     gulp-cli: "*"
 hooks:
   build: |
+    echo "I like french fries and ketchup, uh huh"
     npm install
     gulp
   deploy: |
     echo "This is the deploy hook firing! AndI like it too!" 
   post_deploy: |
     echo "Post deploy"
-
-
