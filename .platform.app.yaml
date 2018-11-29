@@ -3,7 +3,7 @@ type: php:7.2
 build:
   flavor: composer
   caches:
-    assets:
+    "public/css":
       watch:
         - "assets/sass/*.sass"
         - "gulpfile.js"
