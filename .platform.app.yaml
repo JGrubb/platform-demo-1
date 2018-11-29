@@ -14,6 +14,7 @@ build:
     vendor:
       watch: "composer.*"
 
+
 web:
   locations:
     "/":
