@@ -7,7 +7,7 @@ build:
       watch:
         - "assets/sass/*.sass"
         - "gulpfile.js"
-      directory: "public/css"
+      # directory: "public/css"
     # node_modules:
     #   # `watch` can degenerate to a single string.
     #   watch: "package-lock.json"
