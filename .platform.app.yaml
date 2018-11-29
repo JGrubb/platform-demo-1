@@ -14,7 +14,6 @@ build:
     # vendor:
     #   watch: "composer.*"
 
-
 web:
   locations:
     "/":
@@ -26,12 +25,10 @@ web:
       headers:
         x-testing: "hello"
 
-
 relationships:
   database: "mysqldb:mysql"
   solr: "solrsearch:solr"
 
-#
 mounts:
   "test-mount": "shared:files/test-mount"
 disk: 2048
