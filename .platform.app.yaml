@@ -46,6 +46,7 @@ dependencies:
     gulp-cli: "*"
 hooks:
   build: |
+    ls -la
     if [ ! -f "~/public/css/blog.css" ]; then
       npm install
       gulp
