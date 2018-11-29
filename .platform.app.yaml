@@ -25,17 +25,6 @@ web:
       headers:
         x-testing: "hello"
 
-    # "/info":
-    #   root: "public"
-    #   passthru: "/info.php"
-
-    # "/submodule":
-    #   root: "test-submodule/public"
-    #   passthru: "/index.php"
-    #   index:
-    #     - index.php
-    #   allow: true
-
 relationships:
   database: "mysqldb:mysql"
   solr: "solrsearch:solr"
