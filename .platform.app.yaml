@@ -2,6 +2,10 @@ name: app
 type: php:7.2
 build:
   flavor: composer
+  caches:
+    assets:
+      watch:
+        - "assets/sass/*.sass"
 
 web:
   locations:
@@ -50,10 +54,3 @@ hooks:
     echo "This is the deploy hook firing!" 
   post_deploy: |
     echo "Post deploy"
-
-build:
-  caches:
-    assets:
-      watch:
-        - "assets/sass/*.sass"
-
