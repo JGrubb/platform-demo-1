@@ -51,4 +51,9 @@ hooks:
   post_deploy: |
     echo "Post deploy"
 
+build:
+  caches:
+    assets:
+      watch:
+        - "assets/sass/*.sass"
 
