@@ -8,11 +8,11 @@ build:
         - "assets/sass/*.sass"
         - "gulpfile.js"
       # directory: "public/css"
-    # node_modules:
-    #   # `watch` can degenerate to a single string.
-    #   watch: "package-lock.json"
-    # vendor:
-    #   watch: "composer.*"
+    node_modules:
+      # `watch` can degenerate to a single string.
+      watch: "package-lock.json"
+    vendor:
+      watch: "composer.*"
 
 web:
   locations:
