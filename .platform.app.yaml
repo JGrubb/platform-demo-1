@@ -46,9 +46,10 @@ dependencies:
     gulp-cli: "*"
 hooks:
   build: |
-
-    npm install
-    gulp
+    if [ ! -f "~/public/css/blog.css" ]; then
+      npm install
+      gulp
+    fi
   deploy: |
     echo "This is the deploy hook firing!" 
   post_deploy: |
