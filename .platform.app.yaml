@@ -41,13 +41,14 @@ cron:
     spec: "* * * * *"
     cmd: "echo $PATH"
 
-dependencies:
-  nodejs:
-    gulp-cli: "*"
+# dependencies:
+#   nodejs:
+#     gulp-cli: "*"
 hooks:
   build: |
-    ls -la
+    ls -la public
     if [ ! -f "~/public/css/blog.css" ]; then
+      npm install -g gulp-cli
       npm install
       gulp
     fi
