@@ -6,6 +6,7 @@ build:
     assets:
       watch:
         - "assets/sass/*.sass"
+        - "gulpfile.js"
     node_modules:
       # `watch` can degenerate to a single string.
       watch: "package-lock.json"
