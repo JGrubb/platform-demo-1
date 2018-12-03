@@ -1,1 +1,2 @@
 export PATH=/app/vendor/bin:$PATH
+export LD_LIBRARY_PATH=$HOME:$LD_LIBRARY_PATH
