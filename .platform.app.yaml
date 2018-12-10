@@ -51,5 +51,6 @@ hooks:
     fi
   deploy: |
     echo "This is the deploy hook firing!" 
+    env
   post_deploy: |
     echo "Post deploy"
