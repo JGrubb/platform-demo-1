@@ -1,7 +1,19 @@
 name: app
-type: php:5.6
+type: php:7.3
 build:
   flavor: composer
+  caches:
+    arbitrary_string:
+      watch:
+        - "assets/sass/*.sass"
+        - "gulpfile.js"
+      directory: "public/css"
+      allow_stale: false
+    node_modules:
+      # `watch` can degenerate to a single string.
+      watch: "package-lock.json"
+    vendor:
+      watch: "composer.*"
 
 web:
   locations:
@@ -14,22 +26,10 @@ web:
       headers:
         x-testing: "hello"
 
-    # "/info":
-    #   root: "public"
-    #   passthru: "/info.php"
-
-    # "/submodule":
-    #   root: "test-submodule/public"
-    #   passthru: "/index.php"
-    #   index:
-    #     - index.php
-    #   allow: true
-
 relationships:
   database: "mysqldb:mysql"
   solr: "solrsearch:solr"
 
-#
 mounts:
   "test-mount": "shared:files/test-mount"
 disk: 2048
@@ -39,16 +39,30 @@ cron:
     spec: "* * * * *"
     cmd: "echo $PATH"
 
-dependencies:
-  nodejs:
-    gulp-cli: "*"
+# dependencies:
+#   nodejs:
+#     gulp-cli: "*"
 hooks:
   build: |
-    npm install
-    gulp
+    if [ ! -f "public/css/blog.css" ]; then
+      npm install -g gulp-cli
+      npm install
+      gulp
+    fi
+    set -e
+    unset NPM_CONFIG_PREFIX
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | dash
+    export NVM_DIR="$PLATFORM_APP_DIR/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+    nvm current
+    nvm install 9.11
+    npm install --no-save
   deploy: |
     echo "This is the deploy hook firing!" 
+    env
+    set -e
+    unset NPM_CONFIG_PREFIX
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+    nvm use 9.11
   post_deploy: |
     echo "Post deploy"
-
-
