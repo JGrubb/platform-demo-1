@@ -25,6 +25,9 @@ web:
       allow: true
       headers:
         x-testing: "hello"
+    '/_/errors':
+      root: "errors"
+      allow: true
 
 relationships:
   database: "mysqldb:mysql"
