@@ -15,6 +15,14 @@ build:
     vendor:
       watch: "composer.*"
 
+source:
+  operations:
+    update:
+        command: |
+          echo $(date +%s) > stamp
+          git add stamp
+          git commit -m"Update stuff"
+
 web:
   locations:
     "/":
