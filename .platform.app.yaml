@@ -32,7 +32,7 @@ web:
       allow: true
       headers:
         x-testing: "hello"
-    "this-will-503":
+    "/this-will-503":
       root: "nonexistent"
       index:
         - index.php
