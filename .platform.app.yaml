@@ -18,10 +18,10 @@ build:
 source:
   operations:
     update:
-        command: |
-          echo $(date +%s) > stamp
-          git add stamp
-          git commit -m"Update stuff"
+      command: |
+        echo $(date +%s) > stamp
+        git add stamp
+        git commit -m "Update stuff"
 
 web:
   locations:
@@ -32,6 +32,10 @@ web:
       allow: true
       headers:
         x-testing: "hello"
+    "this-will-503":
+      root: "nonexistent"
+      index:
+        - index.php
     '/_/errors':
       root: "errors"
       allow: true
