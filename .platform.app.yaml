@@ -23,12 +23,12 @@ source:
         git add stamp
         git commit -m "Update stuff"
 
-# workers:
-#   qless:
-#     disk: 1024
-#     commands:
-#       start: |
-#         echo "hello"
+workers:
+  qless:
+    disk: 1024
+    commands:
+      start: |
+        echo "hello"
 
 web:
   locations:
