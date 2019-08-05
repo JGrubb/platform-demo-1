@@ -32,6 +32,7 @@ relationships:
 #
 mounts:
   "test-mount": "shared:files/test-mount"
+  "/.filebeat": "shared:files/filebeat"
 disk: 2048
 #
 cron:
@@ -48,5 +49,6 @@ hooks:
   build: |
     npm install
     gulp
+    ./config/filebeat/scripts/install.sh
   deploy: |
     echo "This is the deploy hook firing!"
