@@ -48,6 +48,7 @@ relationships:
 mounts:
   "test-mount": "shared:files/test-mount"
   "/.filebeat": "shared:files/filebeat"
+  "filebeat/data": "shared:files/filebeat-data"
 disk: 2048
 #
 cron:
