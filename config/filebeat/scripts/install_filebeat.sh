@@ -12,6 +12,7 @@ tar xzvf filebeat-$VERSION-linux-x86_64.tar.gz
 rm filebeat-$VERSION-linux-x86_64.tar.gz
 
 mkdir -p filebeat-$VERSION-linux-x86_64/pki/tls/certs
+mkdir -p /app/filebeat
 
 mv $HOME/filebeat.yml filebeat-$VERSION-linux-x86_64/
 
