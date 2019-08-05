@@ -1,35 +1,56 @@
 name: app
-type: php:7.2
+type: php:7.1
 build:
   flavor: composer
+  caches:
+    arbitrary_string:
+      watch:
+        - "assets/sass/*.sass"
+        - "gulpfile.js"
+      directory: "public/css"
+      allow_stale: false
+    node_modules:
+      # `watch` can degenerate to a single string.
+      watch: "package-lock.json"
+    vendor:
+      watch: "composer.*"
+
+source:
+  operations:
+    update:
+      command: |
+        echo $(date +%s) > stamp
+        git add stamp
+        git commit -m "Update stuff"
+
+workers:
+  qless:
+    disk: 1024
+    commands:
+      start: |
+        echo "hello"
 
 web:
   locations:
     "/":
       root: "public"
-      passthru: "/index.php"
       index:
         - index.php
       allow: true
       headers:
         x-testing: "hello"
-
-    # "/info":
-    #   root: "public"
-    #   passthru: "/info.php"
-
-    # "/submodule":
-    #   root: "test-submodule/public"
-    #   passthru: "/index.php"
-    #   index:
-    #     - index.php
-    #   allow: true
+    "/this-will-503":
+      root: "nonexistent"
+      index:
+        - index.php
+    '/_/errors':
+      root: "errors"
+      allow: true
 
 relationships:
   database: "mysqldb:mysql"
   solr: "solrsearch:solr"
 
-#
 mounts:
   "test-mount": "shared:files/test-mount"
   "/.filebeat": "shared:files/filebeat"
@@ -40,15 +61,18 @@ cron:
     spec: "* * * * *"
     cmd: "echo $PATH"
 
-dependencies:
-  nodejs:
-    gulp-cli: "*"
-  ruby:
-    sass: "*"
+# dependencies:
+#   nodejs:
+#     gulp-cli: "*"
 hooks:
   build: |
-    npm install
-    gulp
     ./config/filebeat/scripts/install.sh
+    if [ ! -f "public/css/blog.css" ]; then
+      npm install -g gulp-cli
+      npm install
+      gulp
+    fi
   deploy: |
-    echo "This is the deploy hook firing!"
+    echo "This is the deploy hook firing! AndI like it too!" 
+  post_deploy: |
+    echo "Post deploy"
