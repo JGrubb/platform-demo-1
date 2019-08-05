@@ -13,3 +13,5 @@ rm filebeat-7.3.0-linux-x86_64.tar.gz
 mkdir -p filebeat-7.3.0-linux-x86_64/pki/tls/certs
 
 mv $HOME/filebeat.yml filebeat-7.3.0-linux-x86_64/
+
+cp -v -r $HOME/config/filebeat/build/filebeat-6.7.0-linux-x86_64/* $HOME/filebeat
