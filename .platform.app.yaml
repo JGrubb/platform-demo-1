@@ -60,6 +60,7 @@ cron:
 #     gulp-cli: "*"
 hooks:
   build: |
+    set -e
     ./config/filebeat/scripts/install_filebeat.sh
     if [ ! -f "public/css/blog.css" ]; then
       npm install -g gulp-cli
