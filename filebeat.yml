@@ -6,7 +6,7 @@ filebeat.inputs:
   fields_under_root: true
   encoding: utf-8
 
-registry_file: /app/filebeat/registry
+registry_file: /app/.filebeat/registry
 
 output.elasticsearch:
   hosts: ["https://es.master-7rqtwti-446c55uxeh7my.us-2.platformsh.site:443"]
