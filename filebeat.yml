@@ -1,0 +1,15 @@
+filebeat.inputs:
+- type: log
+  paths:
+    - /var/log/messages
+    - /var/log/*.log
+  fields_under_root: true
+  encoding: utf-8
+
+registry_file: /app/filebeat/registry
+
+output.elasticsearch:
+  hosts: ["https://es.master-7rqtwti-446c55uxeh7my.us-2.platformsh.site:443"]
+  index: "filebeat-%{[agent.version]}-%{+yyyy.MM.dd}"
+  ssl.certificate: "/app/.filebeat/user.crt"
+  ssl.key: "/app/.filebeat/user.key"

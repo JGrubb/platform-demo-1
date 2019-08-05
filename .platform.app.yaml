@@ -23,12 +23,6 @@ source:
         git add stamp
         git commit -m "Update stuff"
 
-workers:
-  qless:
-    disk: 1024
-    commands:
-      start: |
-        echo "hello"
 
 web:
   locations:
@@ -39,13 +33,13 @@ web:
       allow: true
       headers:
         x-testing: "hello"
-    "/this-will-503":
-      root: "nonexistent"
-      index:
-        - index.php
-    '/_/errors':
-      root: "errors"
-      allow: true
+    # "/this-will-503":
+    #   root: "nonexistent"
+    #   index:
+    #     - index.php
+    # '/_/errors':
+    #   root: "errors"
+    #   allow: true
 
 relationships:
   database: "mysqldb:mysql"
