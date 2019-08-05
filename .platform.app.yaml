@@ -49,6 +49,7 @@ mounts:
   "test-mount": "shared:files/test-mount"
   "/.filebeat": "shared:files/filebeat"
   "filebeat/data": "shared:files/filebeat-data"
+  "filebeat/logs": "shared:files/filebeat-logs"
 disk: 2048
 #
 cron:
